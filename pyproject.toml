@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devos-cli"
+version = "1.0.0"
+description = "DeveloperOS Unified Developer CLI - Zero-dependency, ultra-fast developer utilities"
+readme = "README.md"
+authors = [{ name = "DeveloperOS Team", email = "engineering@developeros.in" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+devos = "devos.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
